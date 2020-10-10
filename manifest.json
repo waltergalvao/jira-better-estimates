@@ -1,0 +1,17 @@
+{
+  "name": "JIRA - Hide Estimates",
+  "version": "1.0",
+  "description": "Hide the estimates on JIRA",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.atlassian.net/*"
+      ],
+      "css": [
+        "button.css"
+      ],
+      "js": ["main.js"]
+    }
+  ]
+}
